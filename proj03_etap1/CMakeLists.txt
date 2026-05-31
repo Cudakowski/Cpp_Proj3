@@ -1,6 +1,6 @@
 #cmake_minimum_required(VERSION 3.1.0)
-cmake_minimum_required(VERSION 3.15)
-project (Proj03)
+cmake_minimum_required(VERSION 3.15.0)
+project (mi2)
 
 # prevent for in-source building
 set(CMAKE_DISABLE_IN_SOURCE_BUILD ON)
@@ -22,4 +22,4 @@ include_directories(${INCLUDES})
 
 file(GLOB SOURCES "${PROJECT_SOURCE_DIR}/src/*.cpp")
 
-add_executable(${PROJECT_NAME} projekt_3.cxx ${SOURCES})
+add_executable(${PROJECT_NAME} main.cpp ${SOURCES})
